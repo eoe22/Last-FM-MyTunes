@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		C3016DE421FB6FB800D833A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016DE321FB6FB800D833A2 /* main.m */; };
 		C3016DE721FB6FB800D833A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016DE621FB6FB800D833A2 /* AppDelegate.m */; };
-		C3016DEA21FB6FB900D833A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016DE921FB6FB900D833A2 /* ViewController.m */; };
+		C3016DEA21FB6FB900D833A2 /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016DE921FB6FB900D833A2 /* SearchResultViewController.m */; };
 		C3016DED21FB6FB900D833A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3016DEB21FB6FB900D833A2 /* Main.storyboard */; };
-		C3016DF021FB6FB900D833A2 /* Obj_C_MyTunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3016DEE21FB6FB900D833A2 /* Obj_C_MyTunes.xcdatamodeld */; };
 		C3016DF221FB6FB900D833A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3016DF121FB6FB900D833A2 /* Assets.xcassets */; };
 		C3016DF521FB6FB900D833A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3016DF321FB6FB900D833A2 /* LaunchScreen.storyboard */; };
 		C3016E0021FB6FB900D833A2 /* Obj_C_MyTunesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016DFF21FB6FB900D833A2 /* Obj_C_MyTunesTests.m */; };
 		C3016E0B21FB6FB900D833A2 /* Obj_C_MyTunesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016E0A21FB6FB900D833A2 /* Obj_C_MyTunesUITests.m */; };
+		C3016E1C21FF58C900D833A2 /* ArtistService.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016E1B21FF58C900D833A2 /* ArtistService.m */; };
+		C3016E492201140F00D833A2 /* AlbumService.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016E482201140F00D833A2 /* AlbumService.m */; };
+		C3016E4C2201141900D833A2 /* TrackService.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016E4B2201141900D833A2 /* TrackService.m */; };
+		C3016E4F2202000A00D833A2 /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016E4E2202000A00D833A2 /* AlbumTableViewCell.m */; };
+		C3016E522202012000D833A2 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016E512202012000D833A2 /* Album.m */; };
+		C3016E562202128F00D833A2 /* NSURL+SearchURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016E552202128F00D833A2 /* NSURL+SearchURL.m */; };
+		C3016E5C22021B5700D833A2 /* NSURLSession+APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3016E5B22021B5700D833A2 /* NSURLSession+APIRequest.m */; };
+		C33CE98522049D4B00D0CE41 /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CE98422049D4B00D0CE41 /* SplitViewController.m */; };
+		C33CE98D22049FC600D0CE41 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33CE98C22049FC600D0CE41 /* DetailViewController.swift */; };
+		C33CE98F2204A4B400D0CE41 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33CE98E2204A4B400D0CE41 /* DetailViewModel.swift */; };
+		C33CE9912204AB3700D0CE41 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33CE9902204AB3700D0CE41 /* AlbumViewController.swift */; };
+		C33CE9932208AE1E00D0CE41 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33CE9922208AE1E00D0CE41 /* LoginViewController.swift */; };
+		C33CE9962209E17000D0CE41 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33CE9952209E17000D0CE41 /* LoginViewModel.swift */; };
+		C3454C4B2209EDBA0012E547 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3454C4A2209EDBA0012E547 /* API.swift */; };
+		C3454C4D220B439D0012E547 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3454C4C220B439D0012E547 /* AuthenticationService.swift */; };
+		C3E82DDF220DE9E9005022CA /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E82DDE220DE9E9005022CA /* LoginViewModelTests.swift */; };
+		C3E82DE1220DF322005022CA /* LoginScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E82DE0220DF322005022CA /* LoginScreenTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +56,9 @@
 		C3016DE321FB6FB800D833A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3016DE521FB6FB800D833A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3016DE621FB6FB800D833A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C3016DE821FB6FB800D833A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C3016DE921FB6FB900D833A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3016DE821FB6FB800D833A2 /* SearchResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
+		C3016DE921FB6FB900D833A2 /* SearchResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
 		C3016DEC21FB6FB900D833A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C3016DEF21FB6FB900D833A2 /* Obj_C_MyTunes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Obj_C_MyTunes.xcdatamodel; sourceTree = "<group>"; };
 		C3016DF121FB6FB900D833A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3016DF421FB6FB900D833A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3016DF621FB6FB900D833A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +68,33 @@
 		C3016E0621FB6FB900D833A2 /* Obj-C MyTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Obj-C MyTunesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3016E0A21FB6FB900D833A2 /* Obj_C_MyTunesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Obj_C_MyTunesUITests.m; sourceTree = "<group>"; };
 		C3016E0C21FB6FB900D833A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3016E1A21FF58C900D833A2 /* ArtistService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistService.h; sourceTree = "<group>"; };
+		C3016E1B21FF58C900D833A2 /* ArtistService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistService.m; sourceTree = "<group>"; };
+		C3016E472201140F00D833A2 /* AlbumService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumService.h; sourceTree = "<group>"; };
+		C3016E482201140F00D833A2 /* AlbumService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumService.m; sourceTree = "<group>"; };
+		C3016E4A2201141900D833A2 /* TrackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackService.h; sourceTree = "<group>"; };
+		C3016E4B2201141900D833A2 /* TrackService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackService.m; sourceTree = "<group>"; };
+		C3016E4D2202000A00D833A2 /* AlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewCell.h; sourceTree = "<group>"; };
+		C3016E4E2202000A00D833A2 /* AlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumTableViewCell.m; sourceTree = "<group>"; };
+		C3016E502202012000D833A2 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		C3016E512202012000D833A2 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		C3016E542202128F00D833A2 /* NSURL+SearchURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SearchURL.h"; sourceTree = "<group>"; };
+		C3016E552202128F00D833A2 /* NSURL+SearchURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SearchURL.m"; sourceTree = "<group>"; };
+		C3016E5A22021B5700D833A2 /* NSURLSession+APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+APIRequest.h"; sourceTree = "<group>"; };
+		C3016E5B22021B5700D833A2 /* NSURLSession+APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+APIRequest.m"; sourceTree = "<group>"; };
+		C33CE98322049D4B00D0CE41 /* SplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
+		C33CE98422049D4B00D0CE41 /* SplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
+		C33CE98B22049FC500D0CE41 /* Obj-C MyTunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-C MyTunes-Bridging-Header.h"; sourceTree = "<group>"; };
+		C33CE98C22049FC600D0CE41 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C33CE98E2204A4B400D0CE41 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		C33CE9902204AB3700D0CE41 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		C33CE9922208AE1E00D0CE41 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		C33CE9952209E17000D0CE41 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C3454C4A2209EDBA0012E547 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C3454C4C220B439D0012E547 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		C3E82DDD220DE9E9005022CA /* Obj-C MyTunesUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-C MyTunesUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3E82DDE220DE9E9005022CA /* LoginViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		C3E82DE0220DF322005022CA /* LoginScreenTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,16 +145,21 @@
 		C3016DE121FB6FB800D833A2 /* Obj-C MyTunes */ = {
 			isa = PBXGroup;
 			children = (
+				C33CE9942209E16000D0CE41 /* ViewModel */,
 				C3016DE521FB6FB800D833A2 /* AppDelegate.h */,
 				C3016DE621FB6FB800D833A2 /* AppDelegate.m */,
-				C3016DE821FB6FB800D833A2 /* ViewController.h */,
-				C3016DE921FB6FB900D833A2 /* ViewController.m */,
+				C33CE98622049F1D00D0CE41 /* ViewController */,
+				C33CE98B22049FC500D0CE41 /* Obj-C MyTunes-Bridging-Header.h */,
 				C3016DEB21FB6FB900D833A2 /* Main.storyboard */,
 				C3016DF121FB6FB900D833A2 /* Assets.xcassets */,
 				C3016DF321FB6FB900D833A2 /* LaunchScreen.storyboard */,
 				C3016DF621FB6FB900D833A2 /* Info.plist */,
-				C3016DEE21FB6FB900D833A2 /* Obj_C_MyTunes.xcdatamodeld */,
 				C3016DE221FB6FB800D833A2 /* Supporting Files */,
+				C33CE98822049F3900D0CE41 /* Service Main */,
+				C3016E532202012600D833A2 /* Service */,
+				C33CE98A22049F5800D0CE41 /* View */,
+				C33CE98922049F4900D0CE41 /* Model */,
+				C33CE98722049F2C00D0CE41 /* Categories */,
 			);
 			path = "Obj-C MyTunes";
 			sourceTree = "<group>";
@@ -139,8 +186,85 @@
 			children = (
 				C3016E0A21FB6FB900D833A2 /* Obj_C_MyTunesUITests.m */,
 				C3016E0C21FB6FB900D833A2 /* Info.plist */,
+				C3E82DDE220DE9E9005022CA /* LoginViewModelTests.swift */,
+				C3E82DDD220DE9E9005022CA /* Obj-C MyTunesUITests-Bridging-Header.h */,
+				C3E82DE0220DF322005022CA /* LoginScreenTest.swift */,
 			);
 			path = "Obj-C MyTunesUITests";
+			sourceTree = "<group>";
+		};
+		C3016E532202012600D833A2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C3016E472201140F00D833A2 /* AlbumService.h */,
+				C3016E482201140F00D833A2 /* AlbumService.m */,
+				C3016E4A2201141900D833A2 /* TrackService.h */,
+				C3016E4B2201141900D833A2 /* TrackService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		C33CE98622049F1D00D0CE41 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C33CE9922208AE1E00D0CE41 /* LoginViewController.swift */,
+				C3016DE821FB6FB800D833A2 /* SearchResultViewController.h */,
+				C3016DE921FB6FB900D833A2 /* SearchResultViewController.m */,
+				C33CE98322049D4B00D0CE41 /* SplitViewController.h */,
+				C33CE98422049D4B00D0CE41 /* SplitViewController.m */,
+				C33CE98C22049FC600D0CE41 /* DetailViewController.swift */,
+				C33CE9902204AB3700D0CE41 /* AlbumViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		C33CE98722049F2C00D0CE41 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C3016E542202128F00D833A2 /* NSURL+SearchURL.h */,
+				C3016E552202128F00D833A2 /* NSURL+SearchURL.m */,
+				C3016E5A22021B5700D833A2 /* NSURLSession+APIRequest.h */,
+				C3016E5B22021B5700D833A2 /* NSURLSession+APIRequest.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		C33CE98822049F3900D0CE41 /* Service Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3016E1A21FF58C900D833A2 /* ArtistService.h */,
+				C3016E1B21FF58C900D833A2 /* ArtistService.m */,
+				C3454C4A2209EDBA0012E547 /* API.swift */,
+				C3454C4C220B439D0012E547 /* AuthenticationService.swift */,
+			);
+			name = "Service Main";
+			sourceTree = "<group>";
+		};
+		C33CE98922049F4900D0CE41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3016E502202012000D833A2 /* Album.h */,
+				C3016E512202012000D833A2 /* Album.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C33CE98A22049F5800D0CE41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3016E4D2202000A00D833A2 /* AlbumTableViewCell.h */,
+				C3016E4E2202000A00D833A2 /* AlbumTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C33CE9942209E16000D0CE41 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C33CE98E2204A4B400D0CE41 /* DetailViewModel.swift */,
+				C33CE9952209E17000D0CE41 /* LoginViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,12 +329,13 @@
 		C3016DD721FB6FB800D833A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = C2QJG01SDRJD;
 				TargetAttributes = {
 					C3016DDE21FB6FB800D833A2 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UT6B6RAQG4;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					C3016DFA21FB6FB900D833A2 = {
@@ -222,6 +347,7 @@
 					C3016E0521FB6FB900D833A2 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UT6B6RAQG4;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C3016DDE21FB6FB800D833A2;
 					};
@@ -279,10 +405,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3016DEA21FB6FB900D833A2 /* ViewController.m in Sources */,
+				C33CE98D22049FC600D0CE41 /* DetailViewController.swift in Sources */,
+				C3016DEA21FB6FB900D833A2 /* SearchResultViewController.m in Sources */,
+				C3016E5C22021B5700D833A2 /* NSURLSession+APIRequest.m in Sources */,
+				C3016E492201140F00D833A2 /* AlbumService.m in Sources */,
 				C3016DE721FB6FB800D833A2 /* AppDelegate.m in Sources */,
+				C3016E4F2202000A00D833A2 /* AlbumTableViewCell.m in Sources */,
+				C33CE9912204AB3700D0CE41 /* AlbumViewController.swift in Sources */,
+				C3016E562202128F00D833A2 /* NSURL+SearchURL.m in Sources */,
 				C3016DE421FB6FB800D833A2 /* main.m in Sources */,
-				C3016DF021FB6FB900D833A2 /* Obj_C_MyTunes.xcdatamodeld in Sources */,
+				C33CE98522049D4B00D0CE41 /* SplitViewController.m in Sources */,
+				C33CE9962209E17000D0CE41 /* LoginViewModel.swift in Sources */,
+				C33CE98F2204A4B400D0CE41 /* DetailViewModel.swift in Sources */,
+				C3016E1C21FF58C900D833A2 /* ArtistService.m in Sources */,
+				C33CE9932208AE1E00D0CE41 /* LoginViewController.swift in Sources */,
+				C3016E522202012000D833A2 /* Album.m in Sources */,
+				C3454C4D220B439D0012E547 /* AuthenticationService.swift in Sources */,
+				C3454C4B2209EDBA0012E547 /* API.swift in Sources */,
+				C3016E4C2201141900D833A2 /* TrackService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +438,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E82DDF220DE9E9005022CA /* LoginViewModelTests.swift in Sources */,
+				C3E82DE1220DF322005022CA /* LoginScreenTest.swift in Sources */,
 				C3016E0B21FB6FB900D833A2 /* Obj_C_MyTunesUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,15 +488,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -381,6 +531,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -394,15 +545,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -422,6 +581,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -431,11 +592,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UT6B6RAQG4;
 				INFOPLIST_FILE = "Obj-C MyTunes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "swift3.Obj-C-MyTunes";
+				PRODUCT_BUNDLE_IDENTIFIER = "Obj-C-MyTunes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Obj-C MyTunes/Obj-C MyTunes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -443,17 +608,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UT6B6RAQG4;
 				INFOPLIST_FILE = "Obj-C MyTunes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "swift3.Obj-C-MyTunes";
+				PRODUCT_BUNDLE_IDENTIFIER = "Obj-C-MyTunes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Obj-C MyTunes/Obj-C MyTunes-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		C3016E1321FB6FB900D833A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = UT6B6RAQG4;
 				INFOPLIST_FILE = "Obj-C MyTunesTests/Info.plist";
@@ -467,6 +636,7 @@
 		C3016E1421FB6FB900D833A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = UT6B6RAQG4;
 				INFOPLIST_FILE = "Obj-C MyTunesTests/Info.plist";
@@ -480,11 +650,16 @@
 		C3016E1621FB6FB900D833A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UT6B6RAQG4;
 				INFOPLIST_FILE = "Obj-C MyTunesUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "swift3.Obj-C-MyTunesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Obj-C MyTunesUITests/Obj-C MyTunesUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "Obj-C MyTunes";
 			};
 			name = Debug;
@@ -492,11 +667,15 @@
 		C3016E1721FB6FB900D833A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UT6B6RAQG4;
 				INFOPLIST_FILE = "Obj-C MyTunesUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "swift3.Obj-C-MyTunesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Obj-C MyTunesUITests/Obj-C MyTunesUITests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "Obj-C MyTunes";
 			};
 			name = Release;
@@ -520,6 +699,7 @@
 				C3016E1121FB6FB900D833A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3016E1221FB6FB900D833A2 /* Build configuration list for PBXNativeTarget "Obj-C MyTunesTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +708,7 @@
 				C3016E1421FB6FB900D833A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3016E1521FB6FB900D833A2 /* Build configuration list for PBXNativeTarget "Obj-C MyTunesUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,21 +717,9 @@
 				C3016E1721FB6FB900D833A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C3016DEE21FB6FB900D833A2 /* Obj_C_MyTunes.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C3016DEF21FB6FB900D833A2 /* Obj_C_MyTunes.xcdatamodel */,
-			);
-			currentVersion = C3016DEF21FB6FB900D833A2 /* Obj_C_MyTunes.xcdatamodel */;
-			path = Obj_C_MyTunes.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C3016DD721FB6FB800D833A2 /* Project object */;
 }

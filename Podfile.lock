@@ -1,0 +1,22 @@
+PODS:
+  - CryptoSwift (0.14.0)
+  - SDWebImage (4.4.5):
+    - SDWebImage/Core (= 4.4.5)
+  - SDWebImage/Core (4.4.5)
+
+DEPENDENCIES:
+  - CryptoSwift (>= 0.9.0)
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CryptoSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  CryptoSwift: 35a10419f4dbf0619c13f8c1c180037e115323fa
+  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
+
+PODFILE CHECKSUM: b2fedf3024fb2ee25ad48826a1f447a6cb483d31
+
+COCOAPODS: 1.5.3
